@@ -1,0 +1,64 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+;=====================================================
+;    Colors 
+;=====================================================
+[colors]
+;background = ${xrdb:color0:#222}
+;background = #282828
+;background-alt-0 = #504945
+;background-alt-1 = #A89984
+;background-alt-2 = #3C3836
+;background-orange = #FE8019
+;foreground = ${xrdb:color7:#222}
+;foreground = #dfdfdf
+;foreground-empty = #504945
+;foreground-alt = #282828
+;foreground-alt-0 = #928374
+;primary = #FC802D
+;secondary = #e60053
+;alert = #bd2c40
+
+
+background = ${xrdb:background}  
+background-alt = #000000E6
+foreground = ${xrdb:foreground}
+foreground-alt = ${xrdb:foreground}
+primary = ${xrdb:color2}
+secondary = ${xrdb:color7}
+alert = ${xrdb:color9}
+color0 = ${xrdb:color0}
+color1 = ${xrdb:color1}
+color2 = ${xrdb:color2}
+color3 = ${xrdb:color3}
+color4 = ${xrdb:color4}
+color5 = ${xrdb:color5}
+color6 = ${xrdb:color6}
+color7 = ${xrdb:color7}
+color8 = ${xrdb:color8}  
+color9 = ${xrdb:color9}
+color10 = ${xrdb:color10}
+color11 = ${xrdb:color11}
+color12 = ${xrdb:color12}
+color13 = ${xrdb:color13}
+color14 = ${xrdb:color14} 
+color15 = ${xrdb:color15}
+color256 = ${xrdb:color256}
+color257 = ${xrdb:color257}
+

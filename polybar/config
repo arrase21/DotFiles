@@ -1,0 +1,55 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;   Gruvbox Theme By: Jorge Ramirez.
+;   https://github.com/jorge-ramirezs/dotFiles
+;==========================================================
+
+;=====================================================
+;     File Includes
+;=====================================================
+
+[section/base]
+include-file = ~/.config/polybar/colors
+include-file = ~/.config/polybar/master
+include-file = ~/.config/polybar/modules
+
+;=====================================================
+;     bspwm Bars
+;=====================================================
+
+[bar/LVDS1]
+inherit = bar/master
+monitor = LVDS1 
+
+module-margin-left = 0
+module-margin-right = 0
+modules-left = flechaizq izq usuario der arribacierra2               
+modules-center = arribaabre izq bspwm der arribacierra
+modules-right = arribaabre2 izq  hora slash fecha pulseaudio der guion izq battery wifi der flechader
+
+
+
+[bar/HDMI1]
+inherit = bar/master
+monitor = HDMI1
+
+module-margin-left = 0
+module-margin-right = 0
+modules-left = flechaizq izq usuario der arribacierra2               
+modules-center = arribaabre izq bspwm der arribacierra
+modules-right = arribaabre2 izq hora slash fecha der guion izq batter
+
