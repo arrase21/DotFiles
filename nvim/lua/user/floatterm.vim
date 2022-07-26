@@ -11,5 +11,5 @@ au FileType c nmap <buffer> <Leader>r :w<esc>:FloatermNew ! gcc % && ./a.out && 
 au FileType cpp nmap <buffer> <Leader>r :w<esc>:FloatermNew ! g++ % && ./a.out && rm a.out <CR>
 au FileType python nmap <buffer> <Leader>r :w<esc>:FloatermNew ! python3 %<CR>
 " au FileType java nmap <buffer> <Leader>r :w<esc>:FloatermNew ! java %:t:r<CR>
-au FileType java nmap <buffer> <Leader>r :w<esc>:FloatermNew ! java %:t<CR>
-" nmap <Leader>c :cd %:p:h <CR> :! javac %:t<CR>
+au FileType java nmap <buffer> <Leader>r :w<esc>:FloatermNew ! java %<CR>
+nmap <Leader>c :cd %:p:h <CR>:!javac %:t<CR>

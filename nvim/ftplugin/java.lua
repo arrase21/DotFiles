@@ -8,7 +8,7 @@ local status_cmp_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not status_cmp_ok then
   return
 end
-capabilities.textDocument.completion.completionItem.snippetSupport = false
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
 
 local status, jdtls = pcall(require, "jdtls")
@@ -87,16 +87,16 @@ local config = {
 
     -- 💀
     "-jar",
-    vim.fn.glob(home .. "/.local/share/nvim/lsp_servers/jdtls/plugins/org.eclipse.equinox.launcher_*.jar"),
-    -- vim.fn.glob(home .. "/tools/jdtls/plugins/org.eclipse.equinox.launcher_*.jar"),
+    -- vim.fn.glob(home .. "/.local/share/nvim/lsp_servers/jdtls/plugins/org.eclipse.equinox.launcher_*.jar"),
+    vim.fn.glob(home .. "/tools/jdtls/plugins/org.eclipse.equinox.launcher_*.jar"),
     -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                       ^^^^^^^^^^^^^^
     -- Must point to the                                                     Change this to
     -- eclipse.jdt.ls installation                                           the actual version
 
     -- 💀
     "-configuration",
-    -- home .. "/tools/jdtls/config_" .. CONFIG,
-    home .. "/.local/share/nvim/lsp_servers/jdtls/config_" .. CONFIG,
+    home .. "/tools/jdtls/config_" .. CONFIG,
+    -- home .. "/.local/share/nvim/lsp_servers/jdtls/config_" .. CONFIG,
     -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        ^^^^^^
     -- Must point to the                      Change to one of `linux`, `win` or `mac`
     -- eclipse.jdt.ls installation            Depending on your system.

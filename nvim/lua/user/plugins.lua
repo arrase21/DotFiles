@@ -58,10 +58,8 @@ return packer.startup(function(use)
   use "romgrk/barbar.nvim"
   use "folke/which-key.nvim"
   use "norcalli/nvim-colorizer.lua"
-  use 'nvim-telescope/telescope-ui-select.nvim'
 
   -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "tanvirtin/monokai.nvim"
   use "svrana/neosolarized.nvim"
   -- use "matsuuu/pinkmare"
@@ -83,12 +81,15 @@ return packer.startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  -- use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use 'nvim-telescope/telescope-ui-select.nvim'
 
   -- Treesitter
   use "nvim-treesitter/nvim-treesitter"
